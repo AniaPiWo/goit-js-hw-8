@@ -1,11 +1,12 @@
 .feedback-form {
   display: flex;
   flex-direction: column;
-  max-width: 480px;
+  width: 480px;
   padding: 12px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 5px;
+  margin-top: 40px;
 }
 
 .feedback-form label {
@@ -24,6 +25,13 @@ input,
 textarea {
   padding: 8px;
   font: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: hotpink;
 }
 
 textarea {

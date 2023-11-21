@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <button><a href="index.html"> ⬅️ Go back</a></button>
+    <div class="container">
+      <iframe
+        id="vimeo-player"
+        src="https://player.vimeo.com/video/236203659"
+        width="640"
+        height="360"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media"
+      ></iframe>
 
-    <iframe
-      id="vimeo-player"
-      src="https://player.vimeo.com/video/236203659"
-      width="640"
-      height="360"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; encrypted-media"
-    ></iframe>
-
+      <div>
+        <button id="reload">Reload page</button>
+        <button id="reset">Reset local storage</button>
+      </div>
+    </div>
     <script src="js/02-video.js" type="module"></script>
   </body>
 </html>
